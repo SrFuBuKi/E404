@@ -1,0 +1,42 @@
+*{
+    background: url(./assets/Background.png);
+    
+}
+
+#master{
+    flex-direction: column;
+}
+
+
+#completo{
+   margin-top: 5%;
+   margin-right: 50%;
+   text-align: center;
+
+   width: 500px;
+   height: 20%;
+    
+}
+
+#titulo{
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #E2E2F5;
+}
+
+#texto{
+    font-family: "Outfit", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #D6D6F2;
+}
+    
+.button{
+     border-radius: 20%;
+     background: #151557;
+     border: 0;
+     color: #E2E2F5;
+     font-family: "Outfit", sans-serif;
+     font-weight: medium;
+}
