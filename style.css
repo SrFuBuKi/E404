@@ -3,19 +3,21 @@
     
 }
 
-#master{
-    flex-direction: column;
+#Master{
+display: flex;    
 }
 
 
+
+
 #completo{
-   margin-top: 5%;
-   margin-right: 50%;
-   text-align: center;
+   margin-top: 16%;
+   margin-left: 12%;
+  
 
    width: 500px;
-   height: 20%;
-    
+   height: 30%;
+   display: block;
 }
 
 #titulo{
@@ -23,6 +25,7 @@
     font-weight: bold;
     font-size: 36px;
     color: #E2E2F5;
+    text-align: left;
 }
 
 #texto{
@@ -33,10 +36,67 @@
 }
     
 .button{
-     border-radius: 20%;
-     background: #151557;
+    padding: 15px 25px;
+
+
+     border-radius: 10rem;
      border: 0;
+     background: #151557;
      color: #E2E2F5;
      font-family: "Outfit", sans-serif;
      font-weight: medium;
+     text-transform: uppercase;
+     transition: 0.3s;
 }
+
+.button:hover{ border-radius: 10rem;  
+
+    background: #212187;
+    border: 0;
+    color: #E2E2F5;
+    font-family: "Outfit", sans-serif;
+    font-weight: medium;}
+
+    #E404 {
+      position: relative;
+      width: 500px;
+      height: 200px;
+      text-align: center;
+      margin-top: 300px;
+      margin-left: 160px;
+      display: flex;
+    }
+    
+    #E404::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: screen;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    
+    #E404 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+
+@media screen and (max-width: 768px) {
+    /* Ajuste as propriedades para telas menores que 768px de largura */
+    #completo {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    #E404 {
+      width: 100%;
+      margin-top: 100px;
+      margin-left: 0;
+    }
+  }
